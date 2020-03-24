@@ -1,22 +1,26 @@
 {
-  "name": "sturdy-couscous",
-  "version": "1.0.0",
-  "description": "Node with React: Fullstack Web Development by Stephen Grider",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shurui91/sturdy-couscous.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shurui91/sturdy-couscous/issues"
-  },
-  "homepage": "https://github.com/shurui91/sturdy-couscous#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "sturdy-couscous",
+	"version": "1.0.0",
+	"description": "Node with React: Fullstack Web Development by Stephen Grider",
+	"main": "index.js",
+	"engines": {
+		"node": "12.13.0",
+		"npm": "6.14.3"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shurui91/sturdy-couscous.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/shurui91/sturdy-couscous/issues"
+	},
+	"homepage": "https://github.com/shurui91/sturdy-couscous#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
 }
