@@ -3,10 +3,13 @@ require('./services/passport');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
 // credential from mlab.com
-// mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongoURI, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true
+});
 
 const app = express();
-//const authRoutes = require('./routes/authRoutes');
+// const authRoutes = require('./routes/authRoutes');
 require('./routes/authRoutes')(app);
 
 // console.developers.google.com
