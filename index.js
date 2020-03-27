@@ -1,9 +1,13 @@
 const express = require('express');
 require('./services/passport');
+const mongoose = require('mongoose');
+const keys = require('./config/keys');
+// credential from mlab.com
+// mongoose.connect(keys.mongoURI);
 
 const app = express();
-require('./routes/authRoutes');
-app;
+//const authRoutes = require('./routes/authRoutes');
+require('./routes/authRoutes')(app);
 
 // console.developers.google.com
 // 713354894804-rm40h5rl6bagvjg1r14oc74kmpqj0qnr.apps.googleusercontent.com
@@ -15,5 +19,3 @@ app;
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
-
-mongoose.connect(keys.mongoURI);
